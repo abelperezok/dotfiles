@@ -1,9 +1,8 @@
 #!/bin/sh
 
-# img=/usr/share/backgrounds/archlinux/archbtw.png
-img=/tmp/archbtw.png
+img=/tmp/lock.png
 
-scrot $img
+scrot -o $img
 convert $img -scale 10% -scale 1000% $img
 
 i3lock -u -i $img
